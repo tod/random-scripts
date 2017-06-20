@@ -39,5 +39,5 @@ if [ "$ACTIVEWIN" != "$($XDOTOOL getactivewindow)" ]; then
     exit;
 fi
 
-$XDOTOOL type "$TEXT"
+$XDOTOOL - <<< "type $TEXT"
 #$XDOTOOL key KP_Enter
